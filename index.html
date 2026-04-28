@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LunaCare — Legal</title>
+<style>
+  :root {
+    --bg: #FBF7F4;
+    --card: #FFFFFF;
+    --text: #2D2B3D;
+    --text-secondary: #6E6A80;
+    --primary: #A07CC8;
+    --border: rgba(45, 43, 61, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16121F;
+      --card: #272235;
+      --text: #F4EFF8;
+      --text-secondary: #B8B0CC;
+      --primary: #B49BE0;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 64px 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, #A07CC8, #E8A0B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .tagline {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .link-card {
+    background: var(--card);
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    text-align: left;
+    transition: transform 0.2s ease;
+  }
+  .link-card:hover {
+    transform: translateY(-2px);
+  }
+  .link-card .title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .link-card .desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .footer {
+    margin-top: 40px;
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>LunaCare</h1>
+  <p class="tagline">あなたの心と体に、やさしく寄り添う。</p>
+  <div class="links">
+    <a class="link-card" href="./privacy.html">
+      <div class="title">プライバシーポリシー</div>
+      <div class="desc">情報の取り扱いについて</div>
+    </a>
+    <a class="link-card" href="./terms.html">
+      <div class="title">利用規約</div>
+      <div class="desc">サービスのご利用条件</div>
+    </a>
+  </div>
+  <div class="footer">© 2026 LunaCare</div>
+</div>
+</body>
+</html>

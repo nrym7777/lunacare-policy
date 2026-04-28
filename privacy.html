@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー — LunaCare</title>
+<meta name="description" content="LunaCare（ルナケア）アプリのプライバシーポリシー">
+<style>
+  :root {
+    --bg: #FBF7F4;
+    --card: #FFFFFF;
+    --text: #2D2B3D;
+    --text-secondary: #6E6A80;
+    --primary: #A07CC8;
+    --primary-soft: rgba(160, 124, 200, 0.10);
+    --warn: #B8862A;
+    --warn-soft: rgba(232, 184, 120, 0.18);
+    --border: rgba(45, 43, 61, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16121F;
+      --card: #272235;
+      --text: #F4EFF8;
+      --text-secondary: #B8B0CC;
+      --primary: #B49BE0;
+      --primary-soft: rgba(180, 155, 224, 0.16);
+      --warn: #EAC28A;
+      --warn-soft: rgba(234, 194, 138, 0.18);
+      --border: rgba(255, 255, 255, 0.10);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 24px 16px 64px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  header h1 { font-size: 28px; margin: 0 0 8px; }
+  header .meta { color: var(--text-secondary); font-size: 13px; }
+  h2 {
+    font-size: 17px;
+    color: var(--primary);
+    margin-top: 32px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  p, li { font-size: 14.5px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin: 12px 0;
+  }
+  .important {
+    background: var(--primary-soft);
+    border-left: 3px solid var(--primary);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+  a { color: var(--primary); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>プライバシーポリシー</h1>
+  <div class="meta">LunaCare（ルナケア） / 最終更新: 2026年4月26日</div>
+</header>
+
+<p>LunaCare（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、本ポリシーに従って情報を取り扱います。本アプリは <strong>ログイン機能を提供しておらず、氏名・メールアドレス・電話番号・住所・支払情報等の個人情報を取得しません</strong>。</p>
+
+<h2>1. 本アプリが取得しないもの</h2>
+<ul>
+  <li>氏名・メールアドレス・電話番号・住所</li>
+  <li>クレジットカード番号その他の決済情報</li>
+  <li>位置情報（GPS）</li>
+  <li>連絡先・カレンダー・写真ライブラリ</li>
+  <li>カメラ・マイクの直接取得情報</li>
+  <li>広告識別子（IDFA）・解析サービス（Google Analytics 等）への送信</li>
+  <li>第三者広告SDK経由の追跡情報</li>
+</ul>
+
+<h2>2. 端末内に保存される情報</h2>
+<p>感情記録・周期に関する設定・ルナモンプロフィール・チャット履歴・占い結果・各種アプリ設定は、ユーザーのiPhone内のローカル領域（SwiftData / UserDefaults / Keychain）にのみ保存されます。これらは、本ポリシー第3項に明記する場合を除き、外部のサーバーや第三者に送信されません。</p>
+<p>ユーザーは、本アプリの設定 → データ → 「全データを削除」、または本アプリのアンインストールにより、保存されたすべての情報をいつでも削除できます。</p>
+
+<h2>3. AIサービス（OpenAI）への送信について</h2>
+
+<div class="important">
+  <strong>重要</strong>: AIケアチャット機能および一部のAI占い機能は、応答生成のため、ユーザーが入力したテキストを <strong>OpenAI, L.L.C.（米国所在）が提供するOpenAI API</strong> に送信します。本アプリの初回AI機能利用時に同意確認が表示されます。
+</div>
+
+<p><strong>送信される情報</strong>:</p>
+<ul>
+  <li>AIチャット欄に入力したテキスト</li>
+  <li>応答品質向上のための匿名コンテキスト（現在の周期フェーズ名・最近の感情カテゴリ・星座・占いの種類）</li>
+</ul>
+
+<p><strong>送信されない情報</strong>:</p>
+<ul>
+  <li>本ポリシー第1項に列挙したすべての情報（本アプリは元々取得しません）</li>
+  <li>生理日・排卵日の具体的な日付</li>
+  <li>感情記録の本文メモ（チャットに直接入力した内容を除く）</li>
+  <li>HealthKitから取得したデータ</li>
+</ul>
+
+<p><strong>OpenAIにおける取扱い</strong>: OpenAIに送信されたデータは、OpenAIの<a href="https://openai.com/policies/api-data-usage-policies/" target="_blank" rel="noopener">API利用ポリシー</a>に従って処理されます。OpenAI APIは、デフォルトで送信されたデータをモデル学習に使用しません。データは不正利用検出のため最大30日間OpenAI側に保持された後、削除されます。</p>
+
+<p><strong>同意の撤回</strong>: ユーザーは、本アプリの設定からAIサービスの利用をいつでも停止できます。停止後は記録・周期・ルナモン育成等の他の機能は通常どおりご利用いただけます。</p>
+
+<p><strong>国際的なデータ転送</strong>: OpenAIの提供インフラは米国を含む複数の国に所在します。AI機能をご利用いただくことで、これらの国へのデータ転送に同意いただいたものとみなします。</p>
+
+<h2>4. HealthKit連携（任意）</h2>
+<p>ユーザーが許可した場合に限り、Apple HealthKit経由で月経記録を <strong>読み取り</strong>、本アプリ内の周期予測精度向上に利用します。HealthKitから取得したデータは <strong>本アプリの機能の範囲を超えて第三者に送信・共有されることはなく、広告・マーケティング目的にも一切使用されません</strong>。HealthKit連携はiOSの設定 → ヘルスケア、または本アプリの設定からいつでも解除できます。</p>
+
+<h2>5. 課金情報</h2>
+<p>プレミアムサブスクリプションの購入はApple Inc.のApp Storeを通じて処理され、本アプリは決済情報を取得・保存しません。本アプリが取得・保持するのは、購入されたプロダクトIDとサブスクリプションの有効期限の情報のみです。</p>
+
+<h2>6. パートナーシェア機能</h2>
+<p>パートナーシェア機能は、ユーザーが明示的に作成・確認したカード画像を、ユーザー自身がiOS純正の共有シートで選択した宛先に対してのみ送信します。本アプリのサーバーを経由せず、誰に・何を・いつ送信したかという情報を本アプリは記録しません。カード画像には生理日・排卵日・周期日数の具体的な数値・日付は含まれません。</p>
+
+<h2>7. 安全管理</h2>
+<p>本アプリは、合理的な範囲で技術的・組織的な安全管理措置を講じます。AIサービスとの通信はHTTPS/TLSで暗号化されています。ただし、インターネット通信および電子的保管の性質上、絶対的なセキュリティを保証するものではありません。</p>
+
+<h2>8. お問い合わせ</h2>
+<div class="card">
+  <p style="margin: 0;"><strong>連絡先</strong>: 準備中（リリース時に正式な問い合わせ窓口を開設予定です）</p>
+</div>
+<p>本ポリシーに関するご質問・ご要望は、リリース後に開設する公式問い合わせ窓口までご連絡ください。なお、本アプリは端末内データのみを取り扱う性質上、確実なデータ削除は本アプリの設定 → データ → 「全データを削除」が即時かつ完全な手段となります。</p>
+
+<h2>9. ポリシーの変更</h2>
+<p>本ポリシーは、サービス内容や関連法令、Apple審査ガイドラインの更新に伴い改訂されることがあります。改訂後のポリシーは本ページに掲載された時点で効力を生じます。重要な変更がある場合は、本ページ上部の「最終更新」日付の更新と、合理的な範囲でアプリ内通知またはApp Store更新説明にてお知らせします。</p>
+
+<div class="footer">
+  © 2026 LunaCare. All rights reserved.<br>
+  <a href="./terms.html">利用規約</a> · <a href="./index.html">トップへ戻る</a>
+</div>
+
+</div>
+</body>
+</html>
